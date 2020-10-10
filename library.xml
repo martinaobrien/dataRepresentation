@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>''' version of XML '
+<?xml version="1.0" encoding="UTF-8"?>
 <library>
 
-  <book category="cooking">///
+  <book catalogue="cooking">
     <ISBN>9781250303882</ISBN>
     <title lang="en">5 Ingredients – Quick and Easy Food</title>
     <author>Jamie Oliver</author>
   </book>
 
-    <book category="cooking">
+    <book catalogue="cooking">
     <ISBN>9781785945076</ISBN>
     <title lang="en">Mary Berry's Simple Comforts</title>
     <author>Mary Berry</author>
   </book>
 
-  <book category="technical">
+  <book catalogue="technical">
     <ISBN>9781491957660</ISBN>
     <title lang="en">Python for Data Analysis</title>
     <author>Wes McKinney</author>
   </book>
 
-    <book category="technical">
+   <book catalogue="technical">
     <ISBN>0636920516248</ISBN>
     <title lang="en">Algorithms in a Nutshell</title>
     <author>George T. Heineman</author>
