@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>lab03</title>
+    </head>
+        <body>
+            <button onclick="readJSON()">go</button>
+            <div id="output"></div>
+
+            <script>
+                function readJSON(){
+                    $.ajax({
+                        "url": "http://api.coindesk.com/v1/bpi/currentprice.json",
+                        "method": "GET",
+                        "data": "",
+                        "dataType": "JSON",
+                        "success": function(result){
+                            var rate = result.bpi.EUR.rate;
+                            //console.log(rate);
+                            document.getElementById("output").innerText= rate;//jquery has a nicer way to print this out
+                            
+                        },
+                        "error":function(xhr,status, error){
+                        console.log("status:"+status+" message:" + error);
+                        }
+
+                });
+
+                }
+
+
+            </script>
+        </body>
+</html>
